@@ -14,12 +14,12 @@ public class TestMeditor extends BaseMeditor {
 
     override public function initialize():void
     {
-        super .initialize();
+        super.initialize();
     }
 
     override public function destroy():void
     {
-        super .destroy();
+        super.destroy();
     }
 }
 }

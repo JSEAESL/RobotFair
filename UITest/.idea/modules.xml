@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://E:/迅雷下载/FairyGUI-starling-demo/ExtensionDemo/Extension-demo-starling.iml" filepath="E:/迅雷下载/FairyGUI-starling-demo/ExtensionDemo/Extension-demo-starling.iml" />
+      <module fileurl="file://E:/迅雷下载/FairyGUI-starling-demo/JoystickDemo/Joystick-demo-starling.iml" filepath="E:/迅雷下载/FairyGUI-starling-demo/JoystickDemo/Joystick-demo-starling.iml" />
+      <module fileurl="file://E:/迅雷下载/FairyGUI-starling-demo/LoopListDemo/LoopList-demo-starling.iml" filepath="E:/迅雷下载/FairyGUI-starling-demo/LoopListDemo/LoopList-demo-starling.iml" />
+      <module fileurl="file://E:/迅雷下载/FairyGUI-starling-demo/MainDemo/Main-demo-starling.iml" filepath="E:/迅雷下载/FairyGUI-starling-demo/MainDemo/Main-demo-starling.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Robotlegs2Sample/Robotlegs2Sample.iml" filepath="$PROJECT_DIR$/../../Robotlegs2Sample/Robotlegs2Sample.iml" />
       <module fileurl="file://$PROJECT_DIR$/UITest.iml" filepath="$PROJECT_DIR$/UITest.iml" />
+      <module fileurl="file://E:/迅雷下载/FairyGUI-starling-demo/VirtualListDemo/VirtualList-demo-starling.iml" filepath="E:/迅雷下载/FairyGUI-starling-demo/VirtualListDemo/VirtualList-demo-starling.iml" />
     </modules>
   </component>
 </project>

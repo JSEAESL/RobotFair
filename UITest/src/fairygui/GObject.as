@@ -816,7 +816,7 @@ package fairygui
 		{
 			return _displayObject;
 		}
-		
+
 		final protected function setDisplayObject(value:DisplayObject):void
 		{
 			_displayObject = value;

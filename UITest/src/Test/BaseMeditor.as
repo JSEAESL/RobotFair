@@ -17,13 +17,13 @@ public class BaseMeditor extends Mediator {
 
     override public function initialize():void
     {
-        super .initialize();
+        super.initialize();
         logger.debug(MEDIATOR_INITIALIZE)
     }
 
     override public function destroy():void
     {
-        super .destroy();
+        super.destroy();
         logger.debug(MEDIATOR_DESTORY)
     }
 }

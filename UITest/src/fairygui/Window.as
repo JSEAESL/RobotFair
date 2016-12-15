@@ -92,7 +92,7 @@ package fairygui
 		public function get dragArea():GObject
 		{
 			return _dragArea;
-		}
+    }
 		
 		public function set dragArea(value:GObject):void
 		{

@@ -6,10 +6,11 @@ package TestUI
 
 	public class UI_loginUI extends GComponent
 	{
-		public var m_canelBtn:GComponent;
-		public var m_okBtn:GComponent;
-		public var m_tt:GTextField;
-		public var m_text2:GTextField;
+		public var m_frame:UI_WindowFrame;
+		public var m_text2:GTextInput;
+		public var m_okBtn:UI_Button9;
+		public var m_canelBtn:UI_Button9;
+		public var m_text2_2:GTextInput;
 
 		public static const URL:String = "ui://6binmjzdqobl0";
 
@@ -26,10 +27,11 @@ package TestUI
 		{
 			super.constructFromXML(xml);
 
-			m_canelBtn = GComponent(this.getChild("canelBtn"));
-			m_okBtn = GComponent(this.getChild("okBtn"));
-			m_tt = GTextField(this.getChild("tt"));
-			m_text2 = GTextField(this.getChild("text2"));
+			m_frame = UI_WindowFrame(this.getChildAt(0));
+			m_text2 = GTextInput(this.getChildAt(1));
+			m_okBtn = UI_Button9(this.getChildAt(2));
+			m_canelBtn = UI_Button9(this.getChildAt(3));
+			m_text2_2 = GTextInput(this.getChildAt(4));
 		}
 	}
 }
