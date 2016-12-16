@@ -16,6 +16,12 @@ public class LoginWindow extends Window {
         this.center();
     }
 
+
+    public function get UI():UI_loginUI
+    {
+        return this.contentPane as UI_loginUI;
+    }
+
     override protected function onShown():void
     {
 

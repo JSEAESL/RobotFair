@@ -50,7 +50,7 @@ public class UITest extends Sprite {
             conText.install(MVCSBundle)
                     .install(StarlingViewMapExtension)
                     .configure(TestConfig)
-                    .configure(new ContextView( THIS ),starlingInst,GRoot.inst.displayObject);
+                    .configure(new ContextView( THIS ),starlingInst,GRoot.inst.nativeStage);
                     //.initialize();
         }
         function onResized(evt:Event):void

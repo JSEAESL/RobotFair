@@ -122,7 +122,7 @@ package fairygui
 		
 		public function set contentArea(value:GObject):void
 		{
-			_contentArea = value;
+            _contentArea = value;
 		}
 
 		public function show():void

@@ -8,7 +8,10 @@ import Ex.mediators.StarlingSubViewMediator;
 import Ex.views.StarlingContextView;
 import Ex.views.StarlingSubView;
 
-import Test.LoginWindow;
+    import RoleInfo.RoleInfoWindow;
+    import RoleInfo.RoleInfoWindowMediator;
+
+    import Test.LoginWindow;
 
 import robotlegs.bender.extensions.contextView.ContextView;
 import robotlegs.bender.extensions.eventCommandMap.api.IEventCommandMap;
@@ -45,9 +48,18 @@ public class TestConfig implements IConfig
 
 
 
-        injector.map(LoginWindow).asSingleton();
+        /*injector.map(LoginWindow).asSingleton();
         mediatorMap.map(LoginWindow).toMediator(LoginViewMediator);
         injector.getInstance(LoginWindow).show();
+        injector.map(LoginViewMediator).asSingleton();
+        injector.getInstance(LoginViewMediator).initialize();*/
+
+        injector.map(RoleInfoWindow).asSingleton();
+        injector.getInstance(RoleInfoWindow).show();
+        injector.map(RoleInfoWindowMediator).asSingleton();
+        injector.getInstance(RoleInfoWindowMediator).initialize();
+
+
         // signals
         /*injector.map(GameViewAppended).asSingleton();
         // models

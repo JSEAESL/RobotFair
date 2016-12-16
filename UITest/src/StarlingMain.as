@@ -2,7 +2,9 @@ package
 {
 import Ex.views.StarlingSubView;
 
-import TestUI.TestUIBinder;
+    import RoleInfoUI.RoleInfoUIBinder;
+
+    import TestUI.TestUIBinder;
 
 import fairygui.GRoot;
 import fairygui.UIPackage;
@@ -29,8 +31,10 @@ public class StarlingMain extends Sprite
 		private function onAddedToStage(evt:starling.events.Event):void
 		{
             removeEventListener( starling.events.Event.ADDED_TO_STAGE, onAddedToStage );
-			var path:String = "../../../res/TestUI.zip";
-			_loader = new URLLoader();
+			//var path:String = "../../../res/TestUI.zip";
+            var path:String = "../../../res/RoleInfoUI.zip";
+
+            _loader = new URLLoader();
 			_loader.dataFormat = URLLoaderDataFormat.BINARY;
 			_loader.load(new URLRequest(path));
 			_loader.addEventListener(flash.events.Event.COMPLETE, onLoadComplete);
@@ -54,8 +58,9 @@ public class StarlingMain extends Sprite
             addChild(new GRoot().displayObject);
             //GRoot.inst.setContentScaleFactor(1400, 900);
             TestUIBinder.bindAll();
+            RoleInfoUIBinder.bindAll();
             CompleteFun && CompleteFun.apply();
-            //TestFun();
+            TestFun();
 
 		}
 

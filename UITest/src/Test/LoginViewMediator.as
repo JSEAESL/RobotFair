@@ -2,12 +2,10 @@
  * Created by haiyang.jiang on 2016/12/14.
  */
 package Test {
-import TestUI.UI_loginUI;
-
-public class LoginViewMediator extends BaseMeditor {
+    public class LoginViewMediator extends BaseMeditor {
 
     [Inject]
-    public var view:UI_loginUI;
+    public var view:LoginWindow;
 
     public function LoginViewMediator() {
         super();
@@ -16,7 +14,7 @@ public class LoginViewMediator extends BaseMeditor {
 
     override public function initialize():void
     {
-        view.m_okBtn.addClickListener(TestFun)
+        view.UI.m_okBtn.addClickListener(TestFun)
     }
 
     private function TestFun():void
