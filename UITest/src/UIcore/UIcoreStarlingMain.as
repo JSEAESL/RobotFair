@@ -18,8 +18,8 @@ package UIcore {
 
         private var _loader:URLLoader;
         private var _loadCount:int = 0;
-        private static var loadNames:Array = ["basic","RolePanel"];
-        private static var loadTpye:String  = ".zip";
+        private static var loadNames:Array = [/*"TestUI","RoleInfoUI",*/"basic","RolePanel"];
+        private static var loadType:String  = ".zip";
         private static var loadPro:String  = "../../../UIres/";
 
         public function UIcoreStarlingMain()
@@ -37,7 +37,7 @@ package UIcore {
         {
             if(_loadCount<loadNames.length)
             {
-                LoadZip(loadPro + loadNames[_loadCount]+ loadTpye);
+                LoadZip(loadPro + loadNames[_loadCount]+ loadType);
             }else
             {
                 UIPackage.waitToLoadCompleted(continueInit);
