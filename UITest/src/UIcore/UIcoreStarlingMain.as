@@ -58,10 +58,11 @@ package UIcore {
 
         private function onLoadComplete(evt:flash.events.Event = null):void
         {
-            if(_loader.data)
+            if(!_loader.data)
             {
-                UIPackage.addPackage(ByteArray(_loader.data), null);
+                throw Error("_loader Error");
             }
+            UIPackage.addPackage(ByteArray(_loader.data), null);
             _loadCount++;
             toLoadZip();
         }
