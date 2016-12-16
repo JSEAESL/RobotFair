@@ -25,14 +25,15 @@ public class StarlingMain extends Sprite
 		public function StarlingMain()
 		{
 			this.addEventListener(starling.events.Event.ADDED_TO_STAGE, onAddedToStage);
-
         }
 
 		private function onAddedToStage(evt:starling.events.Event):void
 		{
             removeEventListener( starling.events.Event.ADDED_TO_STAGE, onAddedToStage );
 			//var path:String = "../../../res/TestUI.zip";
-            var path:String = "../../../res/RoleInfoUI.zip";
+            //var path:String = "../../../res/RoleInfoUI.zip";
+            var path:String = "../../../UIres/basic.zip";
+
 
             _loader = new URLLoader();
 			_loader.dataFormat = URLLoaderDataFormat.BINARY;

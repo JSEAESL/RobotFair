@@ -8,5 +8,11 @@ package RoleInfo {
         public function RoleInfoModel() {
             super();
         }
+
+        public function get NOW_VO():RoleInfoVo
+        {
+            return new RoleInfoVo()
+        }
+
     }
 }

@@ -12,6 +12,8 @@ package RoleInfoUI
 		public var m_pro1:GTextField;
 		public var m_pro2:GTextField;
 		public var m_pro3:GTextField;
+		public var m_nameTF:GTextInput;
+		public var m_rareTF:GTextInput;
 
 		public static const URL:String = "ui://ravwu71qte1yax";
 
@@ -34,6 +36,8 @@ package RoleInfoUI
 			m_pro1 = GTextField(this.getChild("pro1"));
 			m_pro2 = GTextField(this.getChild("pro2"));
 			m_pro3 = GTextField(this.getChild("pro3"));
+			m_nameTF = GTextInput(this.getChild("nameTF"));
+			m_rareTF = GTextInput(this.getChild("rareTF"));
 		}
 	}
 }

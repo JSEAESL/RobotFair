@@ -2,7 +2,11 @@ package {
 
 import Test.TestConfig;
 
-import fairygui.GRoot;
+    import UIcore.UIcoreStarlingMain;
+
+    import UIcore.UItestConfig;
+
+    import fairygui.GRoot;
 
 import flash.display.Sprite;
 import flash.display.StageAlign;
@@ -33,8 +37,11 @@ public class UITest extends Sprite {
         stage.scaleMode = StageScaleMode.NO_SCALE;
         stage.stageFocusRect = false;
         stage.color = 0x9F9F9F;
-        StarlingMain.CompleteFun = RobotInit;
-        var starlingInst:Starling = new Starling(StarlingMain, stage);
+        UIcoreStarlingMain.CompleteFun = RobotInit;
+        var starlingInst:Starling = new Starling(UIcoreStarlingMain, stage);
+       //var starlingInst:Starling = new Starling(StarlingMain, stage);
+
+
         starlingInst.showStats = true;
         starlingInst.skipUnchangedFrames = true;
         starlingInst.start();
@@ -49,7 +56,8 @@ public class UITest extends Sprite {
             var conText:Context = new Context();
             conText.install(MVCSBundle)
                     .install(StarlingViewMapExtension)
-                    .configure(TestConfig)
+                    //.configure(TestConfig)
+                    .configure(UItestConfig)
                     .configure(new ContextView( THIS ),starlingInst,GRoot.inst.nativeStage);
                     //.initialize();
         }

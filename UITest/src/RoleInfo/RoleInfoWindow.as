@@ -5,6 +5,9 @@ package RoleInfo {
     import RoleInfoUI.UI_RoleInfoRoot;
 
     import fairygui.Window;
+    import fairygui.event.GTouchEvent;
+
+    import flash.events.Event;
 
     public class RoleInfoWindow extends Window{
         public function RoleInfoWindow() {
@@ -21,7 +24,24 @@ package RoleInfo {
 
         override protected function onShown():void
         {
+            addEvent();
+            initList();
+        }
+        private function initList():void
+        {
+            UI.m_select.addEventListener(GTouchEvent.CLICK,onClick)
 
         }
+        private function onClick(e:*):void
+        {
+            trace(e);
+        }
+
+        private function addEvent():void
+        {
+
+        }
+
+
     }
 }

@@ -8,8 +8,13 @@ import Ex.mediators.StarlingSubViewMediator;
 import Ex.views.StarlingContextView;
 import Ex.views.StarlingSubView;
 
+    import RoleInfo.RoleInfoCommand;
+    import RoleInfo.RoleInfoModel;
+
     import RoleInfo.RoleInfoWindow;
     import RoleInfo.RoleInfoWindowMediator;
+
+    import RoleInfo.RoleChangeEvent;
 
     import Test.LoginWindow;
 
@@ -55,9 +60,11 @@ public class TestConfig implements IConfig
         injector.getInstance(LoginViewMediator).initialize();*/
 
         injector.map(RoleInfoWindow).asSingleton();
+        injector.map(RoleInfoModel,"NOW_MODEL").asSingleton();
         injector.getInstance(RoleInfoWindow).show();
         injector.map(RoleInfoWindowMediator).asSingleton();
         injector.getInstance(RoleInfoWindowMediator).initialize();
+        commandMap.map(RoleChangeEvent.ROLE_CHANGE).toCommand(RoleInfoCommand);
 
 
         // signals
